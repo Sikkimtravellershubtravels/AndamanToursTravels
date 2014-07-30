@@ -14,7 +14,8 @@ app.use(express.static(__dirname + '/public'));
 var router = express.Router();
 
 router.get('/about', function(req, res) {
-   res.send('this is the about page'); 
+   //res.send('this is the about page'); 
+    res.sendfile(__dirname + "/public/Andaman_Home.html");
 });
 
 app.use('/app', router);
